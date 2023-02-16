@@ -30,7 +30,7 @@ function previousPicture() {
 
 function nextPicture() {
     const mySrc = myImage.getAttribute("src");
-    if (mySrc === "assets/pictures/jesus101.jpg") {
+    if (mySrc === "src/assets/pictures/jesus101.jpg") {
         myImage.setAttribute("src", "src/assets/pictures/bonkbonk.jpg");
         pictureName.setAttribute("picName", "BonkBonk")
     } else if (mySrc === "src/assets/pictures/bonkbonk.jpg") {
