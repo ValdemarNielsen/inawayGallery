@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link href="assets/style.css" rel="stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Inaway Gallery</title>
+</head>
+<body>
+<script>
+    document.getElementById("pictureName").innerHTML = pictureName
+</script>
+<h1>Inaway Galleries</h1>
+
+<div class="middleArea">
+    <button class="buttonPrev" onclick="previousPicture()"> Previous</button>
+    <div class="picturebox">
+
+            <img src="assets/pictures/jesus101.jpg" alt="First painting"/>
+
+    </div>
+
+    <button class="buttonNext" onclick="nextPicture()">Next</button>
+</div>
+
+<div class="textLocateCenter">
+    <p> Titel: <a id="pictureName" > </a> </p>
+</div>
+
+<ul>
+    <li>Acrylmaleri</li>
+    <li>Dimensions can be found upon request</li>
+    <li>Up for bidding</li>
+</ul>
+
+<p>Inspiration from the bible netflix adaption</p>
+
+<p> click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">here </a> for fun! </p>
+<p> Mail: v.nielsen@live.dk </p>
+<p> phone: +45 60802508 </p>
+
+<button onclick="setUserName()">Change user</button>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
