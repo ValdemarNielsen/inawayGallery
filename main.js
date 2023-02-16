@@ -14,16 +14,16 @@ if (!localStorage.getItem("name")) {
 
 function previousPicture() {
     const mySrc = myImage.getAttribute("src");
-    if (mySrc === "assets/pictures/jesus101.jpg") {
-        myImage.setAttribute("src", "assets/pictures/redpainting.jpg");
+    if (mySrc === "src/assets/pictures/jesus101.jpg") {
+        myImage.setAttribute("src", "src/assets/pictures/redpainting.jpg");
         pictureName.setAttribute("picName", "Red Painting")
 
-    } else if (mySrc === "assets/pictures/bonkbonk.jpg") {
-        myImage.setAttribute("src", "assets/pictures/jesus101.jpg")
+    } else if (mySrc === "src/assets/pictures/bonkbonk.jpg") {
+        myImage.setAttribute("src", "src/assets/pictures/jesus101.jpg")
         pictureName.setAttribute("picName", "Black Jesus")
 
-    } else if (mySrc === "assets/pictures/redpainting.jpg") {
-        myImage.setAttribute("src", "assets/pictures/bonkbonk.jpg");
+    } else if (mySrc === "src/assets/pictures/redpainting.jpg") {
+        myImage.setAttribute("src", "src/assets/pictures/bonkbonk.jpg");
         pictureName.setAttribute("pictureName", "BonkBonk")
     }
 }
@@ -31,13 +31,13 @@ function previousPicture() {
 function nextPicture() {
     const mySrc = myImage.getAttribute("src");
     if (mySrc === "assets/pictures/jesus101.jpg") {
-        myImage.setAttribute("src", "assets/pictures/bonkbonk.jpg");
+        myImage.setAttribute("src", "src/assets/pictures/bonkbonk.jpg");
         pictureName.setAttribute("picName", "BonkBonk")
-    } else if (mySrc === "assets/pictures/bonkbonk.jpg") {
-        myImage.setAttribute("src", "assets/pictures/redpainting.jpg")
+    } else if (mySrc === "src/assets/pictures/bonkbonk.jpg") {
+        myImage.setAttribute("src", "src/assets/pictures/redpainting.jpg")
         pictureName.setAttribute("picName", "Red Painting")
-    } else if (mySrc === "assets/pictures/redpainting.jpg") {
-        myImage.setAttribute("src", "assets/pictures/jesus101.jpg");
+    } else if (mySrc === "src/assets/pictures/redpainting.jpg") {
+        myImage.setAttribute("src", "src/assets/pictures/jesus101.jpg");
         pictureName.setAttribute("picName", "Black Jesus")
     }
 }
