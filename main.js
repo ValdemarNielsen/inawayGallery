@@ -22,23 +22,26 @@ arrayOfImagee.push('src/assets/pictures/valdesbillede.jpg', 'title 12');
 arrayOfImagee.push('src/assets/pictures/valentine.jpg', 'titel 13');
 
 var arrayOfImages = ["src/assets/pictures/abstractredone.jpg", "src/assets/pictures/africanwoman.jpg", "src/assets/pictures/bloodcircles.jpg", "src/assets/pictures/coupleholdinghands.jpg",
-"src/assets/pictures/curvesinsand.jpg", "src/assets/pictures/geometry.jpg", "src/assets/pictures/infinity.jpg", "src/assets/pictures/peopledancing.jpg",
-"src/assets/pictures/redpainting.jpg", "src/assets/pictures/redsquarefaces.jpg", "src/assets/pictures/twofriends.jpg", "src/assets/pictures/valdesbillede.jpg",
-"src/assets/pictures/valentine.jpg"]
+    "src/assets/pictures/curvesinsand.jpg", "src/assets/pictures/geometry.jpg", "src/assets/pictures/infinity.jpg", "src/assets/pictures/peopledancing.jpg",
+    "src/assets/pictures/redpainting.jpg", "src/assets/pictures/redsquarefaces.jpg", "src/assets/pictures/twofriends.jpg", "src/assets/pictures/valdesbillede.jpg",
+    "src/assets/pictures/valentine.jpg"]
 var currentImage = 0;
+
 function pictureChangerNext() {
-    currentImage ++;
+    currentImage++;
     if (currentImage >= arrayOfImages.length) {
         currentImage = 0;
     }
     myImage.setAttribute("src", arrayOfImages[currentImage])
 }
+
 function pictureChangerPrev() {
-    currentImage --;
-    if (currentImage === 1) {
-        currentImage = arrayOfImages.length;
+
+    if (currentImage === 0) {
+        currentImage = arrayOfImages.length - 1;
     }
     myImage.setAttribute("src", arrayOfImages[currentImage])
+    currentImage--;
 }
 
 if (!localStorage.getItem("name")) {
