@@ -4,6 +4,8 @@ html {
     font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
 }
 
+
+
 h1 {
     font-size: 50px;
     text-align: center;
@@ -70,10 +72,21 @@ img {
     max-height: 550px;
     max-width: 600px;
 }
+a {
+    color: blue;
+}
 
-p,
+p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
 li {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 2;
     letter-spacing: 1px;
 }
@@ -85,11 +98,12 @@ li {
     margin: 0 auto;
 }
 #bg {
-    background-image: url('src/assets/pictures/valdesbillede.jpg');
+    background-image: url('src/assets/pictures/grastest.png');
     width: 100%;
+    height: 100%;
     horiz-align: center;
     margin: 0 auto;
-    background-color: mistyrose;
+    background-color: white;
     padding: 0 20px 20px 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
